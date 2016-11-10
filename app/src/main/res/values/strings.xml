@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Vegan App</string>
+    <string name="activity_main_facebook_login_button">Facebook</string>
+    <string name="activity_main_google_login_button">Google</string>
+    <string name="activity_main_username_hint">username</string>
+    <string name="activity_main_password_hint">password</string>
+    <string name="activity_main_login_button">Login</string>
+</resources>
