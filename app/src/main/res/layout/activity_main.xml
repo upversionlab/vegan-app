@@ -58,6 +58,18 @@
             android:layout_height="wrap_content"
             android:text="@string/activity_main_google_login_button"/>
 
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@android:color/darker_gray"
+            android:layout_marginBottom="8dp"/>
+
+        <Button
+            android:id="@+id/activity_main_barcode_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/activity_main_barcode_button"/>
+
     </LinearLayout>
 
 </RelativeLayout>
