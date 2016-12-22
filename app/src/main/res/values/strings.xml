@@ -14,7 +14,6 @@
     <string name="barcode_error">"Error reading barcode: %1$s"</string>
 
 
-
     <string name="app_name">Vegan App</string>
     <string name="activity_main_facebook_login_button">Facebook</string>
     <string name="activity_main_google_login_button">Google</string>
@@ -22,4 +21,18 @@
     <string name="activity_main_password_hint">password</string>
     <string name="activity_main_login_button">Login</string>
     <string name="activity_main_barcode_button">Barcode</string>
+    <string name="activity_welcome_step1">Bem vindo \nao nosso app!</string>
+    <string name="activity_welcome_step2">Fizemos o app para simplificar a sua vida vegana!</string>
+    <string name="activity_welcome_step3">Ache as informações de produtos utilizando o código de barras ou usando as ferramentas de busca</string>
+    <string name="activity_welcome_step4">Não encontrou um produto?\n Envie as informações para a gente!</string>
+    <string name="activity_welcome_step5_header">Indique abaixo as suas <b>restrições alimentares</b>. Elas serão aplicadas\n quando você fizer uma busca</string>
+    <string name="activity_welcome_next">Next</string>
+    <string name="activity_welcome_back">Back</string>
+    <string name="activity_welcome_step5_meat">Carne</string>
+    <string name="activity_welcome_step5_egg">Ovo</string>
+    <string name="activity_welcome_step5_milk">Leite</string>
+    <string name="activity_welcome_step5_honey">Mel</string>
+    <string name="activity_welcome_step5_gluten">Glútem</string>
+    <string name="activity_welcome_step5_organic">Produto Orgânico</string>
+    <string name="activity_welcome_step5_start">Começar a usar</string>
 </resources>
