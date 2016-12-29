@@ -35,4 +35,16 @@
     <string name="activity_welcome_step5_gluten">Glútem</string>
     <string name="activity_welcome_step5_organic">Produto Orgânico</string>
     <string name="activity_welcome_step5_start">Começar a usar</string>
+
+    <string name="activity_main_search_hint">Busca</string>
+    <string name="activity_main_search_language">pt</string>
+    <string name="activity_main_search_by_company">Procurar por empresas</string>
+    <string name="activity_main_search_by_product_type">Procurar por Tipo de Produto</string>
+    <string name="activity_main_search_for_food_products">Alimentos</string>
+    <string name="activity_main_search_for_hygiene_products">Higiene</string>
+    <string name="activity_main_search_for_cleaning_products">Limpeza</string>
+    <string name="activity_main_scan_barcode">Escanear código de barras</string>
+    <string name="activity_main_search">Busca</string>
+    <string name="activity_main_history">Recentes</string>
+    <string name="activity_main_about">Sobre</string>
 </resources>

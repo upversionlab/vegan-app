@@ -179,6 +179,7 @@
         </LinearLayout>
 
         <Button
+            android:id="@+id/activity_welcome_start_button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/activity_welcome_step5_start"/>
