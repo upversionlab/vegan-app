@@ -31,7 +31,9 @@
                 android:resource="@xml/activity_main_searchable" />
         </activity>
 
-        <activity android:name="com.google.android.gms.samples.vision.barcodereader.BarcodeCaptureActivity" />
+        <activity
+            android:name="com.google.android.gms.samples.vision.barcodereader.BarcodeCaptureActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
     </application>
 
 </manifest>
