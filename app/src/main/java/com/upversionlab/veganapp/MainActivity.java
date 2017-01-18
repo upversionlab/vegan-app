@@ -9,8 +9,6 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.SearchView;
 import android.view.View;
 
-import com.google.android.gms.samples.vision.barcodereader.BarcodeCaptureActivity;
-
 public class MainActivity extends AppCompatActivity {
 
     @Override
@@ -27,7 +25,7 @@ public class MainActivity extends AppCompatActivity {
         scanBarcode.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(MainActivity.this, BarcodeCaptureActivity.class);
+                Intent intent = new Intent(MainActivity.this, BarcodeScannerActivity.class);
                 startActivity(intent);
             }
         });
