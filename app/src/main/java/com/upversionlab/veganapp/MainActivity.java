@@ -3,10 +3,10 @@ package com.upversionlab.veganapp;
 import android.app.SearchManager;
 import android.content.ComponentName;
 import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.SearchView;
-import android.support.v7.widget.Toolbar;
 import android.view.View;
 
 public class MainActivity extends AppCompatActivity {
@@ -25,7 +25,8 @@ public class MainActivity extends AppCompatActivity {
         scanBarcode.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                // Show barcode scan activity
+                Intent intent = new Intent(MainActivity.this, BarcodeScannerActivity.class);
+                startActivity(intent);
             }
         });
     }

@@ -47,4 +47,8 @@
     <string name="activity_main_search">Busca</string>
     <string name="activity_main_history">Recentes</string>
     <string name="activity_main_about">Sobre</string>
+
+    <string name="activity_barcode_scanner_both_camera_permission_message">Você deve aceitar ambas as permissões</string>
+    <string name="activity_barcode_scanner_ok">OK</string>
+    <string name="activity_barcode_scanner_cancel">Cancelar</string>
 </resources>
