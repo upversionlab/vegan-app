@@ -3,6 +3,7 @@
     package="com.upversionlab.veganapp">
 
     <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <uses-feature android:name="android.hardware.camera" />
     <uses-feature android:name="android.hardware.camera.autofocus" />
@@ -33,6 +34,7 @@
         <activity
             android:name=".BarcodeScannerActivity"
             android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".activity.PingActivity" />
     </application>
 
 </manifest>
