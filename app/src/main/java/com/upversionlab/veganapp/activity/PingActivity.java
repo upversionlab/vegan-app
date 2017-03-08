@@ -8,18 +8,13 @@ import android.widget.Toast;
 
 import com.upversionlab.veganapp.R;
 import com.upversionlab.veganapp.model.Ping;
-import com.upversionlab.veganapp.model.endpoint.PingInterface;
+import com.upversionlab.veganapp.requester.PingRequester;
 
 import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
-import retrofit2.Retrofit;
-import retrofit2.converter.gson.GsonConverterFactory;
 
 public class PingActivity extends AppCompatActivity {
-
-    // Borcat's IP
-    public static final String VEGAN_SERVER = "http://192.168.0.5:8080/";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,15 +25,8 @@ public class PingActivity extends AppCompatActivity {
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Retrofit retrofit = new Retrofit.Builder()
-                        .baseUrl(VEGAN_SERVER)
-                        .addConverterFactory(GsonConverterFactory.create())
-                        .build();
-
-
-                PingInterface pingService = retrofit.create(PingInterface.class);
-                Call<Ping> call = pingService.getPing();
-                call.enqueue(new Callback<Ping>() {
+                PingRequester pingRequester = new PingRequester();
+                pingRequester.getPing(new Callback<Ping>() {
                     @Override
                     public void onResponse(Call<Ping> callPing, Response<Ping> response) {
                         Ping ping = response.body();
