@@ -1,5 +1,7 @@
 package com.upversionlab.veganapp.requester;
 
+import com.upversionlab.veganapp.BuildConfig;
+
 import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;
 
@@ -8,8 +10,7 @@ import retrofit2.converter.gson.GsonConverterFactory;
  */
 abstract class BaseRequester<Service> {
 
-    // Borcat's IP
-    private static final String VEGAN_SERVER = "http://192.168.0.5:8080/";
+    private static final String VEGAN_SERVER = BuildConfig.BASE_URL;
 
     final Service service;
 
