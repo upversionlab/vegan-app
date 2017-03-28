@@ -17,10 +17,18 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
+    productFlavors {
+        devBorcat {
+            buildConfigField 'String', 'BASE_URL', '"http://192.168.0.5:8080/"';
+        }
+        devUzeda {
+            buildConfigField 'String', 'BASE_URL', '"http://192.168.0.6:8080/"';
+        }
+    }
 }
 
 dependencies {
-    compile fileTree(dir: 'libs', include: ['*.jar'])
+    compile fileTree(include: ['*.jar'], dir: 'libs')
     compile 'com.android.support:appcompat-v7:25.2.0'
     compile 'com.android.support:design:25.2.0'
     compile 'com.android.support.constraint:constraint-layout:1.0.0-beta4'
